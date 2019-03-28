@@ -30,5 +30,9 @@ class Quotes extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  quotes: state.quotes
+}
+
 //add arguments to connect as needed
 export default connect()(Quotes);
