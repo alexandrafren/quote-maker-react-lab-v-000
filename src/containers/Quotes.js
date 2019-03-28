@@ -21,8 +21,7 @@ class Quotes extends Component {
                     <QuoteCard quote={quote} upvote={this.props.upvoteQuote} downvote={this.props.downvoteQuote} remove={this.props.removeQuote} />
                   )
                 })
-                :null
-              }
+                :null}
             </div>
           </div>
         </div>
