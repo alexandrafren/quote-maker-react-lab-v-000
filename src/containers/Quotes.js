@@ -20,7 +20,9 @@ class Quotes extends Component {
                   return(
                     <QuoteCard quote={quote} upvote={this.props.upvoteQuote} downvote={this.props.downvoteQuote} remove={this.props.removeQuote} />
                   )
-                })}
+                })
+                :null
+              }
             </div>
           </div>
         </div>
