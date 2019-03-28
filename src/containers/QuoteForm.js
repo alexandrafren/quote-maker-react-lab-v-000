@@ -33,7 +33,7 @@ class QuoteForm extends Component {
             <div className="panel panel-default">
               <div className="panel-body">
                 <form className="form-horizontal">
-                  <div className="form-group">
+                  <div className="form-group" onChange={this.handleOnChange}>
                     <label htmlFor="content" className="col-md-4 control-label">Quote</label>
                     <div className="col-md-5">
                       <textarea
