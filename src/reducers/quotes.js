@@ -15,7 +15,7 @@ function quotesReducer(state = [], action){
       return [...state(0, idx), Object.assign({}, state[idx], {votes: += 1}), ...state.slice(idx + 1)]
     case 'DOWNVOTE_QUOTE':
       let idx = state.indexOf(action.quoteId);
-      return [...state(0, idx), Object.assign({}, state[idx], {votes: += 1}), ...state.slice(idx + 1)]
+      return [...state(0, idx), Object.assign({}, state[idx], {votes: -= 1}), ...state.slice(idx + 1)]
     default:
       return state;
   }
