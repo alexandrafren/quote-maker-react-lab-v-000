@@ -8,7 +8,8 @@ class QuoteForm extends Component {
   state = {
     //set up a controlled form with internal state
     content: 'test content',
-    author: 'test author'
+    author: 'test author',
+    votes: 0
   }
 
   handleOnChange = event => {
