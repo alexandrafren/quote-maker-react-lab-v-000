@@ -15,11 +15,12 @@ class Quotes extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              {/*
-                TODO:
-
-                Render Quotes With QuoteCard component and pass down callback props for removing, upvoting and downvoting quotes
-               */}
+              {this.props.quotes ? 
+                this.props.quotes.map((quote, index) => {
+                  return(
+                    <QuoteCard quote={quote} upvote={this.props.upvoteQuote} downvote={this.props.downvoteQuote} remove={this.props.removeQuote} />
+                  )
+                })}
             </div>
           </div>
         </div>
